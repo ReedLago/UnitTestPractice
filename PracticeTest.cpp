@@ -37,6 +37,12 @@ TEST(PracticeTest, no_repeats)
     ASSERT_EQ(testObject.count_starting_repeats("no"),1);
 }
 
+TEST(PracticeTest, aaaaba_repeats)
+{
+    Practice testObject;
+    ASSERT_EQ(testObject.count_starting_repeats("aaaaba"),4);
+}
+
 TEST(PracticeTest, outOfOrder)
 {
     Practice testObject;
